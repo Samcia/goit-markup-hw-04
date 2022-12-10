@@ -114,6 +114,13 @@ body {
   padding-top: 90px;
   padding-bottom: 90px;
 }
+.bg-img {
+  background-image: url(../images/Img15.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-width: 1600px;
+}
 .head1 {
   text-align: center;
   justify-content: center;
