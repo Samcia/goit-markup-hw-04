@@ -74,11 +74,17 @@ body {
   list-style: none;
   color: var(--paragraph-color);
   column-gap: 20px;
-  margin-left: auto;
 }
-.icon-msg {
+.icons-header {
   display: inline-flex;
+  margin: 0 auto;
 }
+.icons-header:hover,
+.icons-header:focus,
+.icons-header:active {
+  fill: var(--logo-color);
+}
+
 .mail {
   text-decoration: none;
   color: var(--paragraph-color);
@@ -118,7 +124,6 @@ body {
   background-image: url(../images/Img15.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 auto;
   max-width: 1600px;
 }
 .head1 {
@@ -250,11 +255,6 @@ body {
   justify-content: center;
   text-align: center;
   margin-bottom: 30px;
-}
-.our-clients {
-  background-color: var(--background);
-  margin-top: 88px;
-  margin-bottom: 52px;
 }
 
 .clients {
