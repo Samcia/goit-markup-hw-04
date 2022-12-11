@@ -128,9 +128,12 @@ body {
 }
 .bg-img {
   background: var(--color);
-  background-image: url(../images/Img15.jpg);
-  background-image: url(../images/Img15.jpg),
-    linear-gradient(var(--color), rgba(47, 48, 58, 0.4));
+  background: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/Img15.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1600px;
@@ -284,6 +287,10 @@ body {
 .sc-mg {
   margin: 16px 32px 18px 32px;
 }
+.mates-list {
+  list-style: none;
+  display: inline;
+}
 .social-items {
   fill: var(--social-items);
   column-gap: 10px;
@@ -309,23 +316,19 @@ body {
 .clients-style {
   list-style: none;
   display: inline-flex;
-  column-gap: 30px;
+  gap: 30px;
   align-items: center;
 }
 .customers {
-  width: 170px;
-  height: 92px;
   border: 1px solid var(--social-items);
   border-radius: 4%;
   align-items: center;
-  justify-content: center;
   margin-top: 50px;
   cursor: pointer;
 }
 .customers-style {
   fill: var(--social-items);
-  align-items: center;
-  justify-content: center;
+  padding: 18px 32px;
 }
 
 .customers-style:hover,
@@ -395,27 +398,24 @@ body {
   color: var(--logo-color);
 }
 .join-us {
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 30px;
 }
 
 .join {
   color: var(--logo-ftr);
-  display: inline;
-  flex-direction: column;
   justify-content: center;
+}
+.join-list {
+  list-style: none;
+  flex-direction: column;
 }
 .social-items-pf {
   fill: var(--logo-ftr);
   column-gap: 10px;
   align-items: center;
   cursor: pointer;
-}
-
-.dp {
-  display: block;
-  flex-wrap: wrap:
 }
 
 .button-items {
