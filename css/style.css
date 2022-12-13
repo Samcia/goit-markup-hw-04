@@ -10,6 +10,7 @@
   --header-border: #ececec;
   --social-items: rgba(175, 177, 184, 1);
   --social-items-bg: rgba(255, 255, 255, 0.1);
+  --team-icons: #afb1b8;
 }
 * {
   padding: 0;
@@ -78,7 +79,7 @@ body {
   column-gap: 20px;
 }
 .contact-style a:hover svg {
-  fill: #2196f3;
+  fill: var(--logo-color);
 }
 .icons-mail {
   margin-left: 325px;
@@ -140,7 +141,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1600px;
-  display: flex;
+  margin: 0 auto;
 }
 .head1 {
   text-align: center;
@@ -303,7 +304,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: var(--paragraph-color);
+  fill: var(--team-icons);
   width: 44px;
   height: 44px;
 }
@@ -338,6 +339,9 @@ body {
   align-items: center;
   margin-top: 50px;
 }
+.clients-style a:hover svg {
+  fill: var(--logo-color);
+}
 .customers {
   border: 1px solid var(--social-items);
   border-radius: 4%;
@@ -346,7 +350,6 @@ body {
   align-items: center;
   width: 170px;
   height: 92px;
-
   cursor: pointer;
 }
 .customers-style {
@@ -354,11 +357,6 @@ body {
   padding: 18px 32px;
 }
 
-.customers-style:hover,
-.customers-style:focus,
-.customers-style:active {
-  fill: var(--logo-color);
-}
 .ftr-style {
   background-color: var(--ftr-background);
   text-decoration: none;
