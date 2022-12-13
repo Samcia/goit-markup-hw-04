@@ -339,9 +339,7 @@ body {
   align-items: center;
   margin-top: 50px;
 }
-.clients-style a:hover svg {
-  fill: var(--logo-color);
-}
+
 .customers {
   border: 1px solid var(--social-items);
   border-radius: 4%;
@@ -351,6 +349,16 @@ body {
   width: 170px;
   height: 92px;
   cursor: pointer;
+}
+.customers a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.customers a:hover svg {
+  --social-items: var(--logo-color);
 }
 .customers-style {
   fill: var(--social-items);
