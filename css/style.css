@@ -321,7 +321,7 @@ body {
   fill: var(--logo-ftr);
 }
 .social-items {
-  fill: var(--paragraph-color);
+  fill: var(--team-icons);
   column-gap: 30px;
   align-items: center;
   cursor: pointer;
